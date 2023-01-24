@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>REGRESIÓN LINEAL - FABIÁN LEÓN</title>
+</head>
+
+<body>
+
+    <div class="formulario">
+        <form>
+            <div class="form__getMuestras">
+                <h3>Ingrese el número de muestras: </h3><input type="number" name="n" class="valorN">
+                <input type="button" class="generar" value="Generar muestras">
+                <div class="muestras">
+                    <div class="colX">
+                        <h3>Valores de X</h3>
+                    </div>
+                    <div class="colY">
+                        <h3>Valores de Y</h3>
+                    </div>
+                </div>
+            </div>
+            <input type="button" class="start oculto" value="Calcular regresión">
+        </form>
+    </div>
+
+    <div class="valores oculto">
+        <h1>Valores</h1>
+        <div class="ordenada">
+            <h3>Ordenada del origen:</h3>
+            <div class="valor_ordenada"></div>
+        </div>
+        <div class="pendiente">
+            <h3>Pendiente:</h3>
+            <div class="valor_pendiente"></div>
+        </div>
+        <div class="ecuacion">
+            <h3>Ecuación de regresión:</h3>
+            <div class="valor_ecuacion"></div>
+            <div class="valor_todos"></div>
+        </div>
+    </div>
+
+    <div class="restart oculto"><img src="./src/assets/reload.svg"></div>
+
+    <script src="./src/script.js"></script>
+</body>
+
+</html>
